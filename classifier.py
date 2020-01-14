@@ -96,3 +96,10 @@ print("The training accuracy is: ")
 print(accuracy_score(y, classifier.predict(X)))
 
 # %%
+classifier.get_params()
+
+# %%
+from sklearn.model_selection import cross_val_score
+print(cross_val_score(classifier, X, y, cv=10))
+
+# %%
